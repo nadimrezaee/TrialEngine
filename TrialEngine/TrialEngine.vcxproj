@@ -59,6 +59,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>TrialModule;UNICODE;_UNICODE</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)TrialEngine\vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -73,6 +74,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>TrialModule;UNICODE;_UNICODE</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)TrialEngine\vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -82,12 +84,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Trial\Log.h" />
     <ClInclude Include="src\Trial.h" />
     <ClInclude Include="src\Trial\Application.h" />
     <ClInclude Include="src\Trial\EntryPoint.h" />
     <ClInclude Include="src\Trial\TrialDllImpExp.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Trial\Log.cpp" />
     <ClCompile Include="src\Trial\Application.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
