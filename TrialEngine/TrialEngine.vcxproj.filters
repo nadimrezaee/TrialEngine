@@ -1,42 +1,40 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Trial">
+      <UniqueIdentifier>{41592F0E-AD6D-57BF-76EF-FA1EE2C253F0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Trial\Events">
+      <UniqueIdentifier>{05F27D0E-F154-0DB3-9ADA-4569861CD935}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Trial\TrialDllImpExp.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClInclude Include="src\Trial.h" />
     <ClInclude Include="src\Trial\Application.h">
-      <Filter>Header Files</Filter>
+      <Filter>Trial</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Trial\Core.h">
+      <Filter>Trial</Filter>
     </ClInclude>
     <ClInclude Include="src\Trial\EntryPoint.h">
-      <Filter>Header Files</Filter>
+      <Filter>Trial</Filter>
     </ClInclude>
-    <ClInclude Include="src\Trial.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\Trial\Events\Event.h">
+      <Filter>Trial\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Trial\Log.h">
-      <Filter>Header Files</Filter>
+      <Filter>Trial</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Trial\TrialDllImpExp.h">
+      <Filter>Trial</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Trial\Application.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Trial</Filter>
     </ClCompile>
     <ClCompile Include="src\Trial\Log.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Trial</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

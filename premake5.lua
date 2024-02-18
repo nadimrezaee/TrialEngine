@@ -1,4 +1,4 @@
-workplace "TrialEngine"
+workspace "TrialEngine"
 	architecture "x64"
 	configurations
 	{
@@ -7,14 +7,15 @@ workplace "TrialEngine"
 		"Dist"
 	}
 	
-outputdir = "%{cfg.buildcfg}_%{cfg.system}_%{cfg.architecture}"
+outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 project "TrialEngine"
 	location "TrialEngine"
 	kind "SharedLib"
 	language "C++"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-obj" .. outputdir .. "/%{prj.name}")
+	objdir ("bin-obj/" .. outputdir .. "/%{prj.name}")
+	
 	files
 	{
 		"%{prj.name}/src/**.h",
@@ -22,7 +23,8 @@ project "TrialEngine"
 	}
 	includedirs
 	{
-		%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/src",
+		"%{prj.name}/vendor/spdlog/include"
 	}
 	filter "system:windows"
 		cppdialect "C++17"
@@ -34,8 +36,8 @@ project "TrialEngine"
 		}
 		postbuildcommands
 		{
-			("{COPY} %{cfg.buildtarget.relpath} .. /bin/" .. outputdir .. "/Sandbox")
-		}
+			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
+		}		
 	filter "configurations:Debug"
 		defines "TRIAL_DEBUG"
 		symbols "On"
@@ -65,7 +67,7 @@ project "Sandbox"
 	}
 	links
 	{
-		"Hazel"
+		"TrialEngine"
 	}
 	filter "system:windows"
 		cppdialect "C++17"
