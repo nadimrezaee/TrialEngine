@@ -28,6 +28,9 @@
     <ClInclude Include="src\Trial\TrialDllImpExp.h">
       <Filter>Trial</Filter>
     </ClInclude>
+    <ClInclude Include="KeyEvent.h">
+      <Filter>Trial\Events</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Trial\Application.cpp">

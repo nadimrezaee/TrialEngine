@@ -143,6 +143,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="KeyEvent.h" />
     <ClInclude Include="src\Trial.h" />
     <ClInclude Include="src\Trial\Application.h" />
     <ClInclude Include="src\Trial\Core.h" />
