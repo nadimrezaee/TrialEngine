@@ -1,7 +1,6 @@
 #pragma once
 
 #include <Trial/Events/Event.h>
-#include <Trial/TrialDllImpExp.h>
 #include <sstream>
 
 namespace Trial
