@@ -31,6 +31,12 @@
     <ClInclude Include="KeyEvent.h">
       <Filter>Trial\Events</Filter>
     </ClInclude>
+    <ClInclude Include="MouseEvent.h">
+      <Filter>Trial\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplicationEvent.h">
+      <Filter>Trial\Events</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Trial\Application.cpp">

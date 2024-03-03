@@ -1,4 +1,5 @@
 #pragma once
+#include "Events/Event.h"
 #include "TrialDllImpExp.h"
 
 namespace Trial

@@ -1,4 +1,5 @@
 #include "Application.h"
+#include "Trial/Log.h"
 
 namespace Trial
 {
