@@ -19,7 +19,16 @@
     <ClInclude Include="src\Trial\EntryPoint.h">
       <Filter>Trial</Filter>
     </ClInclude>
+    <ClInclude Include="src\Trial\Events\ApplicationEvent.h">
+      <Filter>Trial\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Trial\Events\Event.h">
+      <Filter>Trial\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Trial\Events\KeyEvent.h">
+      <Filter>Trial\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Trial\Events\MouseEvent.h">
       <Filter>Trial\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Trial\Log.h">
@@ -28,15 +37,7 @@
     <ClInclude Include="src\Trial\TrialDllImpExp.h">
       <Filter>Trial</Filter>
     </ClInclude>
-    <ClInclude Include="KeyEvent.h">
-      <Filter>Trial\Events</Filter>
-    </ClInclude>
-    <ClInclude Include="MouseEvent.h">
-      <Filter>Trial\Events</Filter>
-    </ClInclude>
-    <ClInclude Include="ApplicationEvent.h">
-      <Filter>Trial\Events</Filter>
-    </ClInclude>
+    <ClInclude Include="src\tepch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Trial\Application.cpp">
@@ -45,5 +46,6 @@
     <ClCompile Include="src\Trial\Log.cpp">
       <Filter>Trial</Filter>
     </ClCompile>
+    <ClCompile Include="src\tepch.cpp" />
   </ItemGroup>
 </Project>

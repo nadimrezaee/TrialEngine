@@ -16,6 +16,9 @@ project "TrialEngine"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-obj/" .. outputdir .. "/%{prj.name}")
 	
+	pchheader "tepch.h"
+	pchsource "TrialEngine/src/tepch.cpp"
+	
 	files
 	{
 		"%{prj.name}/src/**.h",
@@ -24,6 +27,7 @@ project "TrialEngine"
 	includedirs
 	{
 		"%{prj.name}/src",
+		"%{prj.name}/src/Trial",
 		"%{prj.name}/vendor/spdlog/include"
 	}
 	filter "system:windows"

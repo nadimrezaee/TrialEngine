@@ -1,10 +1,7 @@
 #pragma once
-
+#include "tepch.h"
 #include "Trial/Core.h"
 #include "Trial/TrialDllImpExp.h"
-
-#include <string>
-#include <functional>
 
 namespace Trial
 {
