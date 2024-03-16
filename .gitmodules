@@ -1,3 +1,6 @@
 [submodule "TrialEngine/vendor/spdlog"]
 	path = TrialEngine/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "TrialEngine/vendor/GLFW"]
+	path = TrialEngine/vendor/GLFW
+	url = https://github.com/nadimrezaee/glfw/

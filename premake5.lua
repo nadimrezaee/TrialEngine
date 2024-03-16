@@ -9,6 +9,11 @@ workspace "TrialEngine"
 	
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "TrialEngine/vendor/GLFW"
+
+include "TrialEngine/vendor/GLFW"
+
 project "TrialEngine"
 	location "TrialEngine"
 	kind "SharedLib"
@@ -28,7 +33,13 @@ project "TrialEngine"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/src/Trial",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+	links 
+	{ 
+		"GLFW",
+		"opengl32.lib"
 	}
 	filter "system:windows"
 		cppdialect "C++17"
@@ -86,4 +97,3 @@ project "Sandbox"
 	filter "configurations:Dist"
 		defines "TRIAL_DIST"
 		optimize "On"
-	
