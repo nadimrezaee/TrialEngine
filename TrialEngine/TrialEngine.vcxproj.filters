@@ -38,6 +38,9 @@
       <Filter>Trial</Filter>
     </ClInclude>
     <ClInclude Include="src\tepch.h" />
+    <ClInclude Include="WIndow.h">
+      <Filter>Trial</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Trial\Application.cpp">
