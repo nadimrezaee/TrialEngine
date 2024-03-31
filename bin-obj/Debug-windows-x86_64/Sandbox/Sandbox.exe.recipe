@@ -2,10 +2,10 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\TrialEngine\bin\Debug-windows-x86_64\TrialEngine\TrialEngine.dll</FullPath>
+      <FullPath>D:\Trial\bin\Debug-windows-x86_64\Trial\Trial.dll</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>D:\TrialEngine\bin\Debug-windows-x86_64\Sandbox\Sandbox.exe</FullPath>
+      <FullPath>D:\Trial\bin\Debug-windows-x86_64\Sandbox\Sandbox.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

@@ -1,4 +1,4 @@
-workspace "TrialEngine"
+workspace "Trial"
 	architecture "x64"
 	configurations
 	{
@@ -10,19 +10,19 @@ workspace "TrialEngine"
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
-IncludeDir["GLFW"] = "TrialEngine/vendor/GLFW"
+IncludeDir["GLFW"] = "Trial/vendor/GLFW/include"
 
-include "TrialEngine/vendor/GLFW"
+include "Trial/vendor/GLFW"
 
-project "TrialEngine"
-	location "TrialEngine"
+project "Trial"
+	location "Trial"
 	kind "SharedLib"
 	language "C++"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-obj/" .. outputdir .. "/%{prj.name}")
 	
 	pchheader "tepch.h"
-	pchsource "TrialEngine/src/tepch.cpp"
+	pchsource "Trial/src/tepch.cpp"
 	
 	files
 	{
@@ -77,12 +77,12 @@ project "Sandbox"
 	}
 	includedirs
 	{
-		"TrialEngine/vendor/spdlog/include",
-		"TrialEngine/src"
+		"Trial/vendor/spdlog/include",
+		"Trial/src"
 	}
 	links
 	{
-		"TrialEngine"
+		"Trial"
 	}
 	filter "system:windows"
 		cppdialect "C++17"

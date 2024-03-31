@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Trial">
+      <UniqueIdentifier>{41592F0E-AD6D-57BF-76EF-FA1EE2C253F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Trial\Events">
+      <UniqueIdentifier>{05F27D0E-F154-0DB3-9ADA-4569861CD935}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Trial.h" />
+    <ClInclude Include="src\Trial\Application.h">
+      <Filter>Trial</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Trial\Core.h">
+      <Filter>Trial</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Trial\EntryPoint.h">
+      <Filter>Trial</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Trial\Events\ApplicationEvent.h">
+      <Filter>Trial\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Trial\Events\Event.h">
+      <Filter>Trial\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Trial\Events\KeyEvent.h">
+      <Filter>Trial\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Trial\Events\MouseEvent.h">
+      <Filter>Trial\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Trial\Log.h">
+      <Filter>Trial</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Trial\TrialDllImpExp.h">
+      <Filter>Trial</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Trial\WIndow.h">
+      <Filter>Trial</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tepch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Trial\Application.cpp">
+      <Filter>Trial</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Trial\Log.cpp">
+      <Filter>Trial</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tepch.cpp" />
+  </ItemGroup>
+</Project>
