@@ -27,7 +27,7 @@ namespace Trial
 	private:
 		GLFWwindow* m_Window;
 
-		struct WindowsData
+		struct WindowData
 		{
 			std::string Title; 
 			unsigned int Width, Height;
@@ -36,7 +36,7 @@ namespace Trial
 			EventCallbackFn EventCallback;
 		};
 
-		WindowsData m_Data;
+		WindowData m_Data;
 	};
 }
 

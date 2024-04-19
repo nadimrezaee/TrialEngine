@@ -23,6 +23,7 @@ namespace Trial
 	{
 		EventDispatcher dispatcher(e);
 		dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnWindowClose));
+		TRIAL_CORE_INFO("{0}", e);
 	}
 
 	void Application::Run()
